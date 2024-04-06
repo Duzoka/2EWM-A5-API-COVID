@@ -1,0 +1,97 @@
+:root {
+    --bgHTML: #000;
+    --cardColor: #555555;
+    --fontColor: #fff;
+    --shadowColor: rgba(0, 0, 0, 0.2);
+    --headerColor: #3d3c3c;
+    --inputEstado: #333232;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;1,600&display=swap');
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--bgHTML);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    justify-content: center;
+    border-radius: 25px;
+    background: var(--headerColor);
+    margin: 6px;
+    padding: 10px;
+    display: flex;
+    width: 85%;
+    height: 5%; 
+    position: fixed;
+    top: 0;
+    
+}
+
+form {
+    display: flex;
+}
+
+header input{
+    margin-right: 30px;
+    padding: 5%;
+    border-radius: 25px;
+    background: var(--inputEstado);
+    border-style: none;
+    outline: none;
+}
+
+form button {
+    border-radius: 50%;
+    background-color: var(--inputEstado);
+    border-style: none;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+form button img{
+    width: 18px;
+    height: 18px;
+}
+
+#content {
+    box-shadow: 0 0 10px var(--shadowColor);
+    background: var(--cardColor);
+    border-radius: 15px;
+    margin: 10px; 
+    padding: 5%;
+    height: 70%;
+    display: flex;
+}
+
+#content h1{
+    font-size: 24pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+    
+}
+
+@media only screen and (min-width: 640px){
+    #content {
+        height: 50%;
+    }
+}
